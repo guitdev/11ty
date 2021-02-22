@@ -9,7 +9,7 @@ mainLinks:
     isVisible: true
   - desc: Get a Ruby (managed) ready environement to use in a minute
     url: https://labs.ovh.com/managed-ruby
-    thumbnail: static/img/ruby.jpg
+    thumbnail: static/img/ruby.png
     isVisible: true
   - desc: Our Gitter to interact with us
     url: https://gitter.im/ovh/power-web-hosting
