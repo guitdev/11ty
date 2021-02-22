@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to OVHcloud hosting
         # call script with all commands (docker)
         # uses: pitscher/ovh-deploy-hosting-action@v1
-        uses: guidev/ovhcloud-deploy-hosting-action@v1
+        uses: guitdev/ovhcloud-deploy-hosting-action@v1
         # Deploys your repository to the following environment
         env:          
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
