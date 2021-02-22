@@ -27,9 +27,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Deploy to OVH hosting
+      - name: Deploy to OVHcloud hosting
         # call script with all commands (docker)
-        uses: pitscher/ovh-deploy-hosting-action@v1
+        # uses: pitscher/ovh-deploy-hosting-action@v1
+        uses: guidev/ovhcloud-deploy-hosting-action@v1
         # Deploys your repository to the following environment
         env:          
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
