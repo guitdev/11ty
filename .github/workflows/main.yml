@@ -34,6 +34,6 @@ jobs:
         env:
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
-          OVH_HOSTING_DOMAIN: ssh.cluster022.hosting.ovh.net
-          REPOSITORY_NAME: managey
-          REPOSITORY_URL: https://github.com/guitdev/managey.git
+          OVH_HOSTING_DOMAIN: ssh.cluster030.hosting.ovh.net
+          REPOSITORY_NAME: 11ty
+          REPOSITORY_URL: https://github.com/guitdev/11ty.git
