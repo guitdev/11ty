@@ -1,15 +1,15 @@
 mainLinks:
   - desc: Get a Node.js (managed) ready environement to use in a minute
     url: https://labs.ovh.com/managed-nodejs
-    # thumbnail: static/img/jamstack.png
+    thumbnail: static/img/node.png
     isVisible: true
   - desc: Get a Python (managed) ready environement to use in a minute
     url: https://labs.ovh.com/managed-python
-    # thumbnail: static/img/jamstack.png
+    thumbnail: static/img/python.png
     isVisible: true
   - desc: Get a Ruby (managed) ready environement to use in a minute
     url: https://labs.ovh.com/managed-ruby
-    # thumbnail: static/img/octo-propaganda.jpg
+    thumbnail: static/img/ruby.jpg
     isVisible: true
   - desc: Our Gitter to interact with us
     url: https://gitter.im/ovh/power-web-hosting
