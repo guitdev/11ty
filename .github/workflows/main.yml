@@ -36,7 +36,7 @@ jobs:
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
           OVH_HOSTING_DOMAIN: ssh.cluster030.hosting.ovh.net
           DOCUMENT_ROOT: ${{ secrets.DOCUMENT_ROOT }}
-          DOCUMENT_ROOT: ${{ secrets.OVH_HOSTING_URL }}
+          OVH_HOSTING_URL: ${{ secrets.OVH_HOSTING_URL }}
           REPOSITORY_NAME: 11ty
           REPOSITORY_URL: https://github.com/guitdev/11ty.git
           
