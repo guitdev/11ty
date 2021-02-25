@@ -29,7 +29,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Deploy to OVHcloud hosting
         # call script with all commands (docker)
-        uses: guitdev/ovhcloud-deploy-hosting-action@v1.2
+        uses: guitdev/ovhcloud-deploy-hosting-action@v1.3
         # Deploys your repository to the following environment
         env:          
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
