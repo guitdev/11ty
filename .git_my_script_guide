@@ -1,0 +1,12 @@
+cat << 'EOF' > ~/my_script.sh
+
+cd ~/www/
+
+npm install
+npm run build
+npm install express
+
+mkdir ~/www/tmp/
+touch ~/www/tmp/restart.txt
+
+EOF
