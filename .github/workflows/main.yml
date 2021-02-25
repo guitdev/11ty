@@ -29,13 +29,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Deploy to OVHcloud hosting
         # call script with all commands (docker)
-        uses: guitdev/ovhcloud-deploy-hosting-action@v1.1
+        uses: guitdev/ovhcloud-deploy-hosting-action@v1.2
         # Deploys your repository to the following environment
         env:          
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
           OVH_HOSTING_DOMAIN: ssh.cluster030.hosting.ovh.net
-          DOCUMENT_ROOT: ${{ secrets.DOCUMENT_ROOT }} 
+          DOCUMENT_ROOT: ${{ secrets.DOCUMENT_ROOT }}
+          DOCUMENT_ROOT: ${{ secrets.OVH_HOSTING_URL }}
           REPOSITORY_NAME: 11ty
           REPOSITORY_URL: https://github.com/guitdev/11ty.git
           
