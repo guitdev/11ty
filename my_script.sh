@@ -1,3 +1,5 @@
+cd $DOCUMENT_ROOT
+
 npm install
 npm run build
 npm install express
