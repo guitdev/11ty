@@ -11,16 +11,17 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Install prerequisites
+      - name: Install deployment prerequisites
         run: |
           sudo apt-get update
           sudo apt-get install -y curl jq sshpass openssh-client
-      - name: WakeUp website
+
+      - name: WakeUp website in its current version
         env:
             OVH_WEBSITE_URL: ${{ secrets.OVH_WEBSITE_URL }}
         run: curl --silent --insecure --location --write-out "%{http_code}" -o /dev/null ${OVH_WEBSITE_URL}
 
-      - name: Clone over SSH
+      - name: Clone new version over SSH
         env:
             OVH_SSH_HOST: ${{ secrets.OVH_SSH_HOST }}
             OVH_SSH_PORT: ${{ secrets.OVH_SSH_PORT }}
@@ -40,7 +41,7 @@ jobs:
             OVH_WEBSITE_URL: ${{ secrets.OVH_WEBSITE_URL }}
         run: sshpass -p ${OVH_SSH_PASSWORD} ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -oLogLevel=quiet ${OVH_SSH_USERNAME}@${OVH_SSH_HOST} -p ${OVH_SSH_PORT} -- 'bash ${HOME}/.powerworkflow/power_install.sh -u '${OVH_WEBSITE_URL}' -d '${OVH_WEBSITE_DOCUMENTROOT}' -e '${OVH_WEBSITE_ENTRYPOINT}' -p '${OVH_WEBSITE_PUBLICDIR}''
 
-      - name: WakeUp website
+      - name: WakeUp website in its new version
         env:
             OVH_WEBSITE_URL: ${{ secrets.OVH_WEBSITE_URL }}
         run: curl --silent --fail --insecure --location --write-out "%{http_code}" -o /dev/null ${OVH_WEBSITE_URL}
