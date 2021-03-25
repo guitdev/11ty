@@ -1,4 +1,4 @@
-name: Deploy 11ty on OVHcloud Power
+name: Deploy on OVHcloud Power
 
 on:
   push:

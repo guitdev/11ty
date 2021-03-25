@@ -16,18 +16,18 @@ mainLinks:
     isVisible: true
 footerLinks:
   - icon: envelope
-    url: mailto:contact@altertek.org
+    url: mailto:contact@me.fr
     title: mail
-    isVisible: true
+    isVisible: false
   - icon: globe
-    url: https://altertek.org
+    url: https://www.ovhcloud.com
     title: website
     isVisible: true
   - icon: github
-    url: https://github.com/altertek
+    url: https://github.com/ovh
     title: github
     isVisible: true
   - icon: twitter
-    url: https://twitter.com/altertek
+    url: https://twitter.com/OVHcloud
     title: twitter
     isVisible: true
